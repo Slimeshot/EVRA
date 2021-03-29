@@ -25,11 +25,15 @@
 		<div class="container">
 			<div class="contacts__content">
 				<div class="contacts__address">
-					<span class="contacts__text">Адрес:</span>
-					<a href="https://www.google.com/maps/dir//59.9341577,30.3378321/@59.9331681,30.3388223,17.04z/data=!4m2!4m1!3e3?hl=ru-KG" target="_blank" class="contacts__link">Невский проспект</a>
+					<div class="contacts__img">
+						<img src="../images/dist/Contacts/map.svg" alt="">
+					</div>
+					<a href="https://www.google.com/maps/dir//59.9341577,30.3378321/@59.9331681,30.3388223,17.04z/data=!4m2!4m1!3e3?hl=ru-KG" target="_blank" class="contacts__link">Трефолева 42Б</a>
 				</div>
 				<div class="contacts__phone">
-					<span class="contacts__text">Телефон:</span>
+					<div class="contacts__img">
+						<img src="../images/dist/Contacts/phone.svg" alt="">
+					</div>
 					<a href="tel:+781076568102" class="contacts__link">+781076568102</a>
 				</div>
 			</div>
@@ -231,9 +235,6 @@
 				<div class="swiper-button-next"></div>
 		
 			</div>
-			<div class="cards__decotation-line">
-				<img src="images/dist/Line.png" alt="line">
-			</div>
 			<div class="cards__decoration-blue decoration"></div>
 		</div>
 
@@ -245,7 +246,10 @@
 <section class="info">
 	<div class="container">
 		<div class="info__content">
-			<video class="info__video-content">
+			<div class="cards__decotation-line">
+				<img src="images/dist/Line.png" alt="line">
+			</div>
+			<video class="info__video-content" controls>
 				<source src="https://favor.agency/wp-content/uploads/shapka-dlya-sajta-15-mb.mp4" type="video/mp4">
 			</video>
 			<div class="info__block">
@@ -254,7 +258,7 @@
 					<p class="info__subtitle">Производим полную очистку, а так же частичную очистку мест поврежденных коррозией на кузовах авто, бусов, полуприцепов, грузовиков. </p>
 				</div>
 
-				<video class="info__video">
+				<video class="info__video" controls>
 					<source src="https://favor.agency/wp-content/uploads/shapka-dlya-sajta-15-mb.mp4" type="video/mp4">
 				</video>
 			</div>
@@ -277,13 +281,51 @@
 				<h2 class="evra__title">Наши кейсы</h2>
 				<div class="evra__work">
 					<p class="evra__label">Проделанная работа</p>
-					<ul class="evra__menu">
-						<li class="evra__list">Очистка и обработка дисков</li>
-						<li class="evra__list">Обезжирование</li>
-						<li class="evra__list">Порошковая покраска</li>
-						<li class="evra__list">Установка</li>
-						<li class="evra__list">Шиномонтаж</li>
-					</ul>
+
+					
+					<div class="swiper-menu">
+						
+						<div class="swiper-wrapper">
+							
+							<div class="swiper-slide swiper-slide__menu">
+								<ul class="evra__menu">
+									<li class="evra__list">Очистка и обработка дисков</li>
+									<li class="evra__list">Обезжирование</li>
+									<li class="evra__list">Порошковая покраска</li>
+									<li class="evra__list">Установка</li>
+									<li class="evra__list">Шиномонтаж</li>
+								</ul>
+							</div>
+							<div class="swiper-slide swiper-slide__menu">
+								<ul class="evra__menu">
+									<li class="evra__list">Очистка и обработка дисков</li>
+									<li class="evra__list">Обезжирование</li>
+									<li class="evra__list">Порошковая покраска</li>
+									<li class="evra__list">Установка</li>
+									<li class="evra__list">Шиномонтаж</li>
+								</ul>
+							</div>
+							<div class="swiper-slide swiper-slide__menu">
+								<ul class="evra__menu">
+									<li class="evra__list">Очистка и обработка дисков</li>
+									<li class="evra__list">Обезжирование</li>
+									<li class="evra__list">Порошковая покраска</li>
+									<li class="evra__list">Установка</li>
+									<li class="evra__list">Шиномонтаж</li>
+								</ul>
+							</div>
+						
+						</div>
+						
+					</div>
+
+
+
+
+
+
+
+					
 					<button class="evra__btn btn">Подробнее</button>
 				</div>
 				<div class="evra__car">
@@ -347,21 +389,9 @@
 										<li class="evra__list-white">HRE Classic 300</li>
 										<li class="evra__list-white"></li>
 									</ul>
-								</div>
-								
-							
-							</div>
-							
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
-						
+								</div>	
+							</div>		
 						</div>
-
-
-
-
-
-						
 						<div class="evra__control">
 							<button class="next">&lt</button>
 							<button class="prev">&gt</button>
@@ -372,7 +402,8 @@
 
 			
 		</div>
-
+		
+		
 	</div>
 </section>
 </div>
@@ -417,6 +448,9 @@
 				<li class="intro__list"><a href="#"><img src="images/dist/soc/Instagram.svg" alt="Instagram"></a></li>
 				<li class="intro__list"><a href="#"><img src="images/dist/soc/Facebook.svg" alt="Facebook"></a></li>
 				</ul>
+				<div class="footer__map">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A39f6c214c2d8cc21259c04fd10c470d312cf75250bd55685c65ef22085506b92&amp;source=constructor" width="420" height="290" frameborder="0"></iframe>
+				</div>
 			</div>
 			<div class="footer__label">
 				<p class="footer__rights">© 2021 All rights reserved</p>
