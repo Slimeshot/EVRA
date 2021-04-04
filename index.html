@@ -44,7 +44,7 @@
 		<div class="container">
 			<div class="header__content">
 				<div class="header__logo">
-					<a href="#">Logo</a>
+					<a href="#">Evra blast</a>
 				</div>
 				<div class="header__burger">
 					<div class="line line-1"></div>
@@ -52,12 +52,12 @@
 					<div class="line line-3"></div>
 				</div>
 				<nav class="header__nav">
-					<ul class="header__menu">
-						<li class="header__list"><a href="#" class="header__link">Главная</a></li>
-						<li class="header__list"><a href="#" class="header__link">цены</a></li>
-						<li class="header__list"><a href="#" class="header__link">услуги</a></li>
-						<li class="header__list"><a href="#" class="header__link">Сервис</a></li>
-						<li class="header__list"><a href="#" class="header__link">Контакты</a></li>
+					<ul class="header__menu" id="navigation">
+						<li class="header__list"><a href="#intros" class="header__link">Главная</a></li>
+						<li class="header__list"><a href="#" class="header__link header__calc">Цены</a></li>
+						<li class="header__list"><a href="#cardss" class="header__link">Услуги</a></li>
+						<li class="header__list"><a href="#evras" class="header__link">Сервис</a></li>
+						<li class="header__list"><a href="#footers" class="header__link">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -97,86 +97,43 @@
 </section>
 
 	
-<section class="cards">
+<section id="cardss" class="cards">
 	<div class="container">
 		<div class="cards__content">
 			<div class="cards__decotation-img">
 				<img src="images/dist/EvRA.png" alt="evra">
 			</div>
 			<div class="cards__decoration decoration"></div>
-			<!-- Slider main container -->
-			<div class="cards__slider">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-				<!-- Slides -->
-					<div class="swiper-slide cards__slide">
-						
-						<div class="slide__wrapper">
-							<div class="slide__front">
-								<div class="cards__slide-img">
-									<img src="images/dist/RamaSlides.png" alt="Rama">
-								</div>
-								<div class="cards__slide-title">
-									<h3>Покраска рам</h3>
-								</div>
-								<div class="cards__slide-button">
-									<button class="cards__slide-btn btn">Подробнее</button>
-								</div>
-							</div>
-							<div class="slide__back">
-								<span class="slide__back-title">Покраска рам</span>
-								<span class="slide__back-text">Текст, описание, детали</span>
-							</div>
-						</div>
+			<div class="cards__block">
+				<div class="cards__item">
+					<div class="cards__img">
+						<img src="images/dist/WheelSlides.png" alt="wheel">
 					</div>
-					<div class="swiper-slide cards__slide">
-
-						<div class="slide__wrapper">
-							<div class="slide__front">
-								<div class="cards__slide-img">
-									<img src="images/dist/WheelSlides.png" alt="Rama">
-								</div>
-								<div class="cards__slide-title">
-									<h3>Покраска деталей</h3>
-								</div>
-								<div class="cards__slide-button">
-									<button class="cards__slide-btn btn">Подробнее</button>
-								</div>
-							</div>
-							<div class="slide__back">
-								<span class="slide__back-title">Покраска деталей</span>
-								<span class="slide__back-text">Текст, описание, детали</span>
-							</div>
-						</div>
-						
+					<div class="cards__label">
+						<h3 class="cards__title">Покраска деталей</h3>
 					</div>
-					<div class="swiper-slide cards__slide">
-
-						<div class="slide__wrapper">
-							<div class="slide__front">
-								<div class="cards__slide-img">
-									<img src="images/dist/MotoSlides.png" alt="Rama">
-								</div>
-								<div class="cards__slide-title">
-									<h3>Покраска мототехники</h3>
-								</div>
-								<div class="cards__slide-button">
-									<button class="cards__slide-btn btn">Подробнее</button>
-								</div>
-							</div>
-							<div class="slide__back">
-								<span class="slide__back-title">Покраска мототехники</span>
-								<span class="slide__back-text">Текст, описание, детали</span>
-							</div>
-						</div>
-
-					
-					</div>
-			
+					<button class="cards__buttont">Подробнее</button>
 				</div>
-
-		
+				<div class="cards__item">
+					<div class="cards__img">
+						<img src="images/dist/RamaSlides.png" alt="wheel">
+					</div>
+					<div class="cards__label">
+						<h3 class="cards__title">Покраска рам</h3>
+					</div>
+					<button class="cards__buttont">Подробнее</button>
+				</div>
+				<div class="cards__item">
+					<div class="cards__img">
+						<img src="images/dist/MotoSlides.png" alt="wheel">
+					</div>
+					<div class="cards__label">
+						<h3 class="cards__title">Покраска мототехники</h3>
+					</div>
+					<button class="cards__buttont">Подробнее</button>
+				</div>
 			</div>
+
 			<div class="cards__decoration-blue decoration"></div>
 		</div>
 
@@ -191,18 +148,23 @@
 			<div class="cards__decotation-line">
 				<img src="images/dist/Line2.png" alt="line">
 			</div>
-			<video class="info__video-content" autoplay loop>
-				<source src="https://favor.agency/wp-content/uploads/shapka-dlya-sajta-15-mb.mp4" type="video/mp4">
-			</video>
+			<div class="wrapper-video">
+				<video class="info__video-content" loop>
+					<source src="https://favor.agency/wp-content/uploads/shapka-dlya-sajta-15-mb.mp4" type="video/mp4">
+				</video>
+				<button class="video-btn">&#9658;</button>
+			</div>
 			<div class="info__block">
 				<div class="info__text">
 					<p class="info__title"><span class="info__subtitle-red">Пескоструй</span> (пескоструйная обработка, песочка, пескоструйная очистка) - технологичный процесс, при котором частицы песка или другого специального абразива вылетают под высоким давлением воздуха через пескоструйную установку, целенаправленно ударяясь о деталь, удаляют ржавчину и остатки старой краски во всех ее труднодоступных местах.</p>
 					<p class="info__subtitle">Производим полную очистку, а так же частичную очистку мест поврежденных коррозией на кузовах авто, бусов, полуприцепов, грузовиков. </p>
 				</div>
-				<video class="info__video" autoplay loop>
-					
-					<source src="https://favor.agency/wp-content/uploads/shapka-dlya-sajta-15-mb.mp4" type="video/mp4">
-				</video>
+				<div class="container-video">
+					<video class="info__video">
+						<source src="https://favor.agency/wp-content/uploads/shapka-dlya-sajta-15-mb.mp4" type="video/mp4">
+					</video>
+					<button class="video-button">&#9658;</button>
+				</div>
 			</div>
 			<div class="info__decotation-line">
 				<img src="images/dist/Line2.png" alt="line">
@@ -212,7 +174,7 @@
 </section>
 
 
-<section class="evra">
+<section id="evras" class="evra">
 	<div class="container">
 		<div class="evra__container">
 			<div class="evra__decoration decoration"></div>
@@ -385,7 +347,18 @@
 		<div class="calc__content">
 			<button class="calc__btn">X</button>
 			<h3 class="calc__title">Рассчитать стоимость</h3>
-			<div class="uCalc_346275"></div><script> var widgetOptions346275 = { bg_color: "transparent" }; (function() { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=346275&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();</script>
+			<div class="uCalc_346275"></div>
+			<script>
+				var widgetOptions346275 = {
+					bg_color: "transparent"
+				};
+				(function() {
+					var a = document.createElement("script"), h = "head";
+					a.async = true;
+					a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=346275&t="+Math.floor(new Date()/18e5);
+					document.getElementsByTagName(h)[0].appendChild(a)
+				})();
+			</script>
 			<img class="calc__decoration" src="images/dist/Line2.png" alt="decoration">
 		</div>
 	</div>
@@ -393,7 +366,7 @@
 
 
 
-<footer class="footer">
+<footer id="footers" class="footer">
 	<div class="container">
 		<div class="footer__container">
 			<div class="footer__logo">
@@ -428,8 +401,7 @@
 	</div>
 </footer>
 
-
-
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="js/app.min.js"></script>
 
 </body>
